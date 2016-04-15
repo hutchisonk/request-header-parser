@@ -1,9 +1,8 @@
+/*
 var express = require("express");
 var port = process.env.PORT || 8080;
 
 var app = express();
-
-
 
 app.get('/', function(request, response) {
   var ip = request.ip;
@@ -14,8 +13,19 @@ app.get('/', function(request, response) {
   response.send(result);
 });
 
-
-
 app.listen(port, function () {
   console.log('listening on port '+port);
+});
+*/
+
+var express = require("express");
+var routes = require("./app/routes/index.js");
+var port = process.env.PORT || 8080;
+
+var app = express();
+
+routes(app);
+
+app.listen(port, function() {
+    console.log('listening on port ' + port);
 });
