@@ -1,0 +1,19 @@
+{
+  "name": "rhparser",
+  "version": "1.0.0",
+  "description": "request header parser",
+  "main": "request.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start":"node request.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "4.4.2"
+  }
+}
